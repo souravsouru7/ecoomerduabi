@@ -1,3 +1,65 @@
+# UAE E-commerce Frontend
+
+A React frontend for the UAE ecommerce platform with Stripe payment integration.
+
+## Features
+
+- Product listing with grid layout
+- Product detail pages with quantity selector
+- Shopping cart with persistent storage
+- Stripe payment integration
+- Responsive design
+- UAE currency (AED) support
+
+## Setup
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Make sure the backend server is running on `http://localhost:3000`
+
+3. Start the development server:
+```bash
+npm start
+```
+
+The frontend will run on `http://localhost:3001`
+
+## Available Scripts
+
+- `npm start` - Start development server
+- `npm build` - Build for production
+- `npm test` - Run tests
+- `npm eject` - Eject from Create React App
+
+## Components
+
+- **Header** - Navigation and cart icon
+- **ProductList** - Grid display of all products
+- **ProductDetail** - Individual product page with buy options
+- **Cart** - Shopping cart with quantity controls
+- **Checkout** - Payment form with Stripe integration
+- **PaymentSuccess** - Success page after payment
+- **PaymentCancel** - Cancel/failure page
+
+## Payment Testing
+
+Use Stripe's test cards:
+- **Visa**: 4242424242424242
+- **MasterCard**: 5555555555554444
+- **Expiry**: Any future date
+- **CVC**: Any 3 digits
+- **ZIP**: Any 5 digits
+
+## Backend Integration
+
+The frontend connects to the Node.js backend API at `http://localhost:3000` for:
+- Product data
+- Payment processing
+- Order management
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
